@@ -1,21 +1,14 @@
 import pandas as pd
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+
 import time
 from requests.exceptions import RequestException
 
 st.set_page_config(page_title="How long will I spend in a hospital?", page_icon="face_with_thermometer")
 
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
-
-lottie_coding = load_lottieurl("https://lottie.host/5198932a-6296-4061-943b-9ac6f685f851/uPvSCY3RLQ.json")
 
 with st.container():
     st.subheader("Business Analytics Capstone Project 2024")
@@ -39,8 +32,7 @@ with st.container():
             """
         )
         st.write("My chances of Early Readmission >](https://hospitalreadmission/c/WePredictForYou")
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+
 
 # Import necessary libraries
 import numpy as np

@@ -1,17 +1,8 @@
 import pandas as pd
-import plotly.express as px
-import seaborn as sns
-import plotly.graph_objects as go
-import os
 import streamlit as st
 import warnings
+import plotly.express as px
 warnings.filterwarnings("ignore")
-import graphviz
-import matplotlib.pyplot as plt
-import plotly.figure_factory as ff
-
-
-import streamlit_shadcn_ui as ui
 
 # Configure Streamlit page
 
